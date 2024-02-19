@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="upload-container">
-        <label for="imageUpload" class="upload-button">
-            <strong><span id="buttonText">Upload your avatar</span></strong>
-            <input type="file" id="imageUpload" accept="image/*" style="display: none;" onchange="onAvatarSelect(event)" />
-        </label>
+    <label for="imageInput" class="upload-button">Upload an avatar</label>
+    <input type="file" id="imageInput" accept="image/*" style="display: none;" onchange="onAvatarSelect(event)">
+    <div class="canvas-container">
+        <canvas id="bloomCanvas" width="512" height="512"></canvas>
+        <canvas id="avatarCanvas" width="512" height="512"></canvas>
     </div>
-    <div id="imageDisplay" class="image-display"></div>
     <script src="js/script.js"></script>
 </body>
 </html>
